@@ -10,7 +10,7 @@ A redesign of the Ling's Cars car-leasing homepage, built with plain HTML and CS
 
 | GMC Acadia | Electric Cars | Family Cars | SUVs |
 |---|---|---|---|
-| ![GMC Acadia](car1.jpg) | ![Electric car](car2.jpg) | ![Family car](car3.jpg) | ![SUV](car4.jpg) |
+| ![GMC Acadia](car1.png) | ![Electric car](car2.png) | ![Family car](car3.png) | ![SUV](car4.png) |
 
 ## Sections
 
