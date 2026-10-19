@@ -10,7 +10,11 @@ A redesign of the Ling's Cars car-leasing homepage, built with plain HTML and CS
 
 | GMC Acadia | Electric Cars | Family Cars | SUVs |
 |---|---|---|---|
+<<<<<<< HEAD
 | ![GMC Acadia](car1.jpg) | ![Electric car](car2.jpg) | ![Family car](car3.jpg) | ![SUV](car4.jpg) |
+=======
+| ![GMC Acadia](car1.png) | ![Electric car](car2.png) | ![Family car](car3.png) | ![SUV](car4.png) |
+>>>>>>> dcb27fb15db4c0682dae40b6126bbcc696ee364a
 
 ## Sections
 
@@ -33,9 +37,12 @@ A redesign of the Ling's Cars car-leasing homepage, built with plain HTML and CS
 ├── car2.png
 ├── car3.png
 └── car4.png
+<<<<<<< HEAD
 @'
 
 ## Figma Design
 
 [Open the design in Figma](https://www.figma.com/design/zek3tZzNClGoNetl7SZ7uB/re-desing?node-id=1-245&t=H0P7WFKbRcagNUuj-0)
 '@ | Add-Content -Path README.md
+=======
+>>>>>>> dcb27fb15db4c0682dae40b6126bbcc696ee364a
