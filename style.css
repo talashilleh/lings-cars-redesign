@@ -1,0 +1,428 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #171819;
+}
+
+.hero {
+  min-height: 620px;
+  padding: 0 max(6%, calc((100% - 1500px) / 2)) 30px;
+  color: white;
+  background:
+    linear-gradient(90deg, rgba(0, 0, 0, .82), rgba(0, 0, 0, .15)),
+    url("car.jpg") center 55% / cover no-repeat;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 0;
+}
+
+.logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.logo span {
+  color: #3478f6;
+}
+
+.topbar nav {
+  display: flex;
+  gap: 28px;
+}
+
+.topbar nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.topbar nav a:hover,
+.footer a:hover {
+  color: #6a98ff;
+}
+
+.hero-content {
+  max-width: 570px;
+  padding: 65px 0 35px;
+}
+
+.eyebrow {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(42px, 6vw, 76px);
+  line-height: 1.04;
+  text-transform: uppercase;
+}
+
+.hero-content > p:not(.eyebrow) {
+  font-size: 18px;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 14px 26px;
+  border-radius: 7px;
+  background: #3478f6;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.button:hover {
+  background: #155bd4;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.features article {
+  padding: 18px;
+  border: 1px solid #aaa;
+  border-radius: 10px;
+  background: rgba(20, 22, 24, .82);
+}
+
+.features p {
+  line-height: 1.55;
+}
+
+.section {
+  padding: 60px max(6%, calc((100% - 1500px) / 2));
+}
+
+.section h2 {
+  margin: 0 0 26px;
+  font-size: 34px;
+  text-transform: uppercase;
+}
+
+.cars {
+  background: white;
+}
+
+.car-list,
+.why-track {
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.car-list::-webkit-scrollbar,
+.why-track::-webkit-scrollbar {
+  display: none;
+}
+
+.car-list {
+  display: flex;
+  gap: 20px;
+  padding: 8px 4px 18px;
+}
+
+.car-card {
+  flex: 0 0 360px;
+  padding: 12px;
+  border-radius: 10px;
+  background: #191a1c;
+  color: white;
+  scroll-snap-align: start;
+}
+
+.car-card img {
+  display: block;
+  width: 100%;
+  height: 190px;
+  border-radius: 7px;
+  object-fit: contain;
+  object-position: center;
+}
+.car-card h3 {
+  margin: 16px 0 7px;
+  font-size: 21px;
+}
+
+.car-card p {
+  margin: 0 0 10px;
+  color: #ddd;
+}
+
+.car-card strong {
+  color: white;
+  font-size: 20px;
+}
+
+.why {
+  min-height: 420px;
+  padding: 45px 0;
+  background-image:
+    linear-gradient(rgba(10, 15, 20, .18), rgba(10, 15, 20, .18)),
+    url("why.png");
+  background-size: 110% auto;
+  background-position: center 35%;
+  background-repeat: no-repeat;
+}
+
+.why-track {
+  display: flex;
+  gap: 20px;
+  padding: 8px max(6%, calc((100% - 1500px) / 2)) 18px;
+}
+
+.why-title,
+.why-card {
+  flex: 0 0 420px;
+  min-height: 310px;
+  padding: 28px;
+  border-radius: 12px;
+  background: #202124;
+  color: white;
+  scroll-snap-align: start;
+}
+
+.why-title {
+  display: flex;
+  align-items: center;
+}
+
+.why-title h2 {
+  margin: 0;
+  font-size: 38px;
+  text-transform: uppercase;
+}
+
+.why-title span {
+  color: #5278f5;
+}
+
+.why-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.why-card h3 {
+  margin: 0 0 22px;
+  font-size: 30px;
+}
+
+.why-card p {
+  color: #ccc;
+  font-size: 18px;
+  line-height: 1.55;
+}
+
+.faq {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #171819;
+  color: white;
+}
+
+.faq-photo {
+  min-height: 580px;
+  background: url("car.jpg") center / cover no-repeat;
+}
+
+.faq-content {
+  padding: 45px clamp(24px, 5vw, 80px);
+}
+
+.faq-content h2 {
+  margin: 0 0 28px;
+  color: #4381ff;
+  font-size: 36px;
+}
+
+.faq-content article {
+  margin: 22px 0;
+}
+
+.faq-content h3 {
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+
+.faq-content p {
+  margin: 0;
+  color: #ccc;
+  line-height: 1.55;
+}
+
+.testimonials {
+  background: white;
+  text-align: center;
+}
+
+.reviews {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  text-align: left;
+}
+
+.review {
+  min-height: 190px;
+  padding: 22px;
+  border-radius: 10px;
+  background: #202124;
+  color: white;
+}
+
+.stars {
+  color: #ffcc00;
+  letter-spacing: 3px;
+}
+
+.review p {
+  min-height: 55px;
+  color: #ddd;
+  line-height: 1.5;
+}
+
+.review small {
+  display: block;
+  margin-top: 7px;
+  color: #aaa;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 35px;
+  padding: 50px max(6%, calc((100% - 1500px) / 2)) 24px;
+  background: #171819;
+  color: white;
+}
+
+.footer h3 {
+  margin-top: 0;
+}
+
+.footer p {
+  color: #bbb;
+}
+
+.footer a:not(.logo) {
+  display: block;
+  margin: 12px 0;
+  color: #bbb;
+  text-decoration: none;
+}
+
+.copyright {
+  grid-column: 1 / -1;
+  margin: 20px 0 0;
+  padding-top: 18px;
+  border-top: 1px solid #444;
+  font-size: 13px;
+}
+
+@media (max-width: 900px) {
+  .faq {
+    grid-template-columns: 1fr;
+  }
+
+  .faq-photo {
+    min-height: 360px;
+  }
+
+  .reviews {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding-right: 6%;
+    padding-left: 6%;
+  }
+
+  .topbar {
+    align-items: flex-start;
+    gap: 18px;
+    flex-direction: column;
+  }
+
+  .topbar nav {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .hero-content {
+    padding-top: 40px;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding: 42px 6%;
+  }
+
+  .section h2 {
+    font-size: 28px;
+  }
+
+  .car-card {
+    flex-basis: 82%;
+  }
+
+  .why-track {
+    padding-right: 6%;
+    padding-left: 6%;
+  }
+
+  .why-title,
+  .why-card {
+    flex-basis: 82%;
+    min-height: 260px;
+  }
+
+  .why-title h2 {
+    font-size: 30px;
+  }
+
+  .why-card h3 {
+    font-size: 25px;
+  }
+
+  .faq-content {
+    padding: 35px 6%;
+  }
+
+  .faq-content h2 {
+    font-size: 29px;
+  }
+
+  .reviews,
+  .footer {
+    grid-template-columns: 1fr;
+  }
+
+  .copyright {
+    grid-column: auto;
+  }
+}
