@@ -35,4 +35,4 @@ A redesign of the Ling's Cars car-leasing homepage, built with plain HTML and CS
 └── car4.png
 ## Figma Design
 
-[Open the design in Figma](https://www.figma.com/design/zek3tZzNClGoNetl7SZ7uB/re-desing?node-id=1-245&t=H0P7WFKbRcagNUuj-0)
+https://www.figma.com/design/zek3tZzNClGoNetl7SZ7uB/re-desing?node-id=1-245&t=H0P7WFKbRcagNUuj-0
